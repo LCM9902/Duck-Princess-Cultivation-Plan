@@ -10,3 +10,5 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
+## 数据库设计
+https://bytedance.feishu.cn/docx/doxcnvk58QcRZxmOmHgogANvnQu
