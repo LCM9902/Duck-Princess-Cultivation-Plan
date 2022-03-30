@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="bg-image" mode="widthFix" src="./IMG_1255.png"></image>
+  <view class="integral" wx:if="{{userName}}">{{userName}}的🐔分:{{userIntegral || 0}}</view>
+
+  <view class="power" wx:key="title" wx:for="{{powerList}}" wx:for-item="power">
+    <view wx:if="{{power.showItem}}">
+      <view wx:key="title" wx:for="{{power.item}}">
+        <view class="power_item" bindtap="jumpPage" data-page="{{item.page}}">
+          <view class="power_item_title">{{item.title}}</view>
+          <image class="power_item_icon" src="../../images/arrow.svg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

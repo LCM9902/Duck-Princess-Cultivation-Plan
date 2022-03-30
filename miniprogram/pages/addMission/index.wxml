@@ -1,0 +1,36 @@
+<view>
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="page-section">
+        <view class="weui-cells__title">任务内容</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="mission_content" class="weui-input" placeholder="请输入" />
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="weui-cells__title">任务图片</view>
+        <view class="box_text" wx:if="{{!imgSrc}}">上传的图片将展示在这里</view>
+      <view  wx:if="{{imgSrc}}" class="code_box">
+        <image class="code_img" src="{{imgSrc}}"></image>
+      </view>
+      <view class="button" bindtap="uploadImg" wx:if="{{!haveGetImgSrc}}">上传图片</view>
+      <view class="button_clear" bindtap="clearImgSrc" wx:if="{{haveGetImgSrc}}">清空</view>
+      </view>
+      <view class="page-section">
+        <view class="weui-cells__title">价值鸡分</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="mission_integral" class="weui-input" type="number" placeholder="请输入"/>
+          </view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button style="margin: 30rpx 0; width: 100%" type="primary" formType="submit">确认</button>
+        <button style="margin: 30rpx 0; width: 100%; border: 1px solid rgba(0, 0, 0, 0.2);" formType="reset">重置</button>
+      </view>
+    </form>
+  </view>
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+</view>

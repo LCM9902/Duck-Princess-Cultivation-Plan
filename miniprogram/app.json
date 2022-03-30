@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/selectRecord/index",
+    "pages/toCompleteMission/index",
+    "pages/toExchangeRewards/index",
+    "pages/updateRewards/index",
+    "pages/addRewards/index",
+    "pages/updateMission/index",
+    "pages/addMission/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "鸭鸭公主养成计划",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

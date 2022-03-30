@@ -1,0 +1,24 @@
+<view>
+  <view  wx:if="{{record}}" class="code_box">
+    <view class="code_box_record">
+      <view class="code_box_record_title code_box_record_title_content">任务内容</view>
+      <view class="code_box_record_title code_box_record_title_number">价值鸡分</view>
+      <view class="code_box_record_title code_box_record_title_time">操作</view>
+    </view>
+    <view class="line"></view>
+    <view class="code_box_record code_box_record_content" wx:for="{{record}}" wx:key="_id">
+      <view class="code_box_record_detail code_box_record_detail_content">
+        <image wx:if="{{item.mission_image}}" class="image" mode="scaleToFill" src="{{item.mission_image}}"></image>
+        {{item.mission_content}}
+      </view>
+      <view class="code_box_record_detail code_box_record_detail_number">
+        {{item.mission_integral}}
+      </view>
+      <view class="code_box_record_detail code_box_record_detail_time">
+        <view id="{{item._id}}" class="button" bindtap="showMissionModal">删除</view>
+      </view>
+    </view>
+  </view>
+  <button class="add_button" wx:if="{{record}}" id="{{item._id}}" style="margin: 50rpx 0; width: 100%" type="primary" bindtap="toAddMission">新增任务</button>
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+</view>
