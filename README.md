@@ -1,5 +1,8 @@
 # 云开发 quickstart
 
+## 数据库设计
+https://bytedance.feishu.cn/docx/doxcnvk58QcRZxmOmHgogANvnQu
+
 这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
 
 - 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
@@ -10,5 +13,3 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
-## 数据库设计
-https://bytedance.feishu.cn/docx/doxcnvk58QcRZxmOmHgogANvnQu
