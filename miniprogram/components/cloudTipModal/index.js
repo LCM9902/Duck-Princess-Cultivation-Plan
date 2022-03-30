@@ -8,7 +8,7 @@ Component({
    */
   data: {
     showUploadTip: false,
-    tipText: isMac ? 'sh ./uploadCloudFunction.sh' : './uploadCloudFunction.bat'
+    tipText: isMac ? 'sh ./uploadCloudFunction.sh' : './uploadCloudFunction.ps1'
   },
   properties: {
     showUploadTipProps: Boolean
